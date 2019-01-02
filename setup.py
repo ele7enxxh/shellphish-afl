@@ -88,7 +88,7 @@ def get_patches():
 
 class build(_build):
     def run(self):
-        self.execute(_setup_other_arch, (), msg="Setting up AFL-other-arch")
+        # self.execute(_setup_other_arch, (), msg="Setting up AFL-other-arch")
         self.execute(_setup_cgc, (), msg="Setting up AFL-cgc")
         self.execute(_setup_libs, (), msg="Getting libraries")
         _datafiles()
@@ -96,7 +96,7 @@ class build(_build):
 
 class develop(_develop):
     def run(self):
-        self.execute(_setup_other_arch, (), msg="Setting up AFL-other-arch")
+        # self.execute(_setup_other_arch, (), msg="Setting up AFL-other-arch")
         self.execute(_setup_cgc, (), msg="Setting up AFL-cgc")
         self.execute(_setup_libs, (), msg="Getting libraries")
         _datafiles()
